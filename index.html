@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud</title>
+    <link rel="StyleSheet" href="./css/style.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&family=Trocchi&display=swap');
+     </style>
+
+</head>
+<body onload="Read()">
+
+        <div class="head">
+            <h1 class="Titulo">Registro de Jugadores</h1>
+        </div>
+
+
+        <div class="input1">
+            <p>Nombre:<input class="inputalimento" type="text" id="user" placeholder="Jugadores"></p>
+        </div>
+
+        <div id="form" class="button1">
+            <button onclick="crear()" type="submit" class="button crear">Crear</button>
+        </div>
+
+        <div class="table">
+            <table id="tabla">
+            </table>
+        </div>
+        <script src="./js/index.js"></script>
+</body>
+</html>

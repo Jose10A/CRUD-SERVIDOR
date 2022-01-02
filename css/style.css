@@ -1,0 +1,117 @@
+body{
+    background: url("../image/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+h1.Titulo{
+    color: white;
+    opacity: 0.7;
+    font-family: -webkit-pictograph;
+    padding: 0px 10px 10px 10px;
+    text-align: center;
+    margin-block-start: 0px;
+}
+div.head{
+    background-color: transparent;
+    margin: 0 auto;
+    max-width: 360px;
+}
+table{
+    margin: auto;
+    align-items: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th{
+    background-color: transparent;
+    color: white;
+    padding: 14px;
+    border:solid black;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+td{
+    background-color: transparent;
+    color: white;
+    padding: 14px;
+    border:solid black;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+div.button1{
+    margin: 0 auto;
+    max-width: 1px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+
+}
+.button{
+    background-color: #4CAF50;
+    border:none;
+    color: white;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.crear{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border-radius: 6px;
+    padding: 5px 10px;
+}
+.crear:hover{
+    background-color: #4CAF50;
+    color: white;
+}
+.borrar{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border-radius: 6px;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+.borrar:hover{
+    background-color: #f44336;
+    color: white;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.editar{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border-radius: 6px;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    
+}
+.editar:hover{
+    background-color: black;
+    color: white;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+div.input1{
+    max-width: 360px;
+    margin: 0 auto;
+    display: table;
+}
+p{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+}
+.table{
+    margin-block-start: 70px;
+}
+input.inputalimento{
+    margin-left: 30px;
+    border-radius: 4px;
+    border-color: white;
+}
+input.inputdescripcion{
+    margin-left: 5px;
+    border-radius: 4px;
+    border-color: white;
+}
+
