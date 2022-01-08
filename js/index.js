@@ -13,7 +13,7 @@ const crear=function(){
   let storage = JSON.parse(localStorage.getItem("names"));
   name1=document.getElementById("user").value;
   if(name1==""){
-    alert("write the name");
+    alert("Escriba un nombre");
 
   }else{
     if(storage==null){
@@ -55,8 +55,8 @@ function Read(){
           <td class="space">${i+1}</td>
           <td class="space">${names2[i]}</td>
           <td class="space">
-               <button Onclick="Update(${i})">Editar</button>
-               <button Onclick="Delete(${i})">Eliminar</button>
+               <button class="editar" Onclick="Update(${i})">Editar</button>
+               <button class="borrar" Onclick="Delete(${i})">Eliminar</button>
           </td>
       </tr>
       `
@@ -80,10 +80,10 @@ function Update(i3){
       usertr.innerHTML+=`
       <tr>
       <td class="space">${i+1}</td>
-      <td class="space"><input id="newName" placeholder="${names4[i]}></input></td>
+      <td class="space"><input id="newName"></input></td>
       <td class="space">
-          <button Onclick="Update2(${i})">Editar</button>
-          <button Onclick="Read()">Cancelar</button>
+          <button class="editar" Onclick="Update2(${i})">Editar</button>
+          <button class="borrar" Onclick="Read()">Cancelar</button>
       </td>
       </tr>
       `
@@ -105,7 +105,7 @@ function Update2(i){
   let names5=JSON.parse(localStorage.getItem("names"));
   names5[i]=document.getElementById("newName").value
   if(names5[i]==''){
-    alert("write the name");
+    alert("Escriba un nombre");
   }else{
     localStorage.setItem("names", JSON.stringify(names5));
     Read();
