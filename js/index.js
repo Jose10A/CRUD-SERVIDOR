@@ -80,10 +80,10 @@ function Update(i3){
       usertr.innerHTML+=`
       <tr>
       <td class="space">${i+1}</td>
-      <td class="space"><input id="newName"></input></td>
+      <td class="space"><input id="newName" placeholder="${names4[i]}"></input></td>
       <td class="space">
-          <button class="editar" Onclick="Update2(${i})">Editar</button>
-          <button class="borrar" Onclick="Read()">Cancelar</button>
+          <button  class="editar" Onclick="Update2(${i})">Editar</button>
+          <button  class="borrar" Onclick="Read()">Cancelar</button>
       </td>
       </tr>
       `
@@ -93,8 +93,8 @@ function Update(i3){
           <td class="space">${i+1}</td>
           <td class="space">${names2[i]}</td>
           <td class="space">
-               <button Onclick="Update(${i})">Edit</button>
-               <button Onclick="Delete(${i})">Delete</button>
+               <button  class="editar" Onclick="Update(${i})">Editar</button>
+               <button  class="borrar" Onclick="Delete(${i})">Eliminar</button>
           </td>
       </tr>
       `
